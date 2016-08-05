@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Dating App</title>
+</head>
+<body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+    	<fieldset>
+    		<legend>Your Face</legend>
+    		<label for="yourImage">Your image:</label>
+    		<input type="file" name="yourImage" required>
+    		<br>
+    		<label for="preview">Image preview:</label>
+    		<img id="preview">
+    	</fieldset>
+    	<fieldset>
+    		<legend>Your General Details</legend>
+    		<label for="name">Name:</label>
+    		<input type="text" name="name" placeholder="Your full name" required>
+    		<br>
+    		<label for="gender">Gender:</label>
+    		<input type="radio" name="gender" value="male" required>Male
+    		<input type="radio" name="gender" value="female" required>Female
+    		<br>
+	        <label for="age">Age:</label>
+	        <input type="number" min="0" max="99" step="1" value="18" name="age" required>
+	        <br>
+	        <label for="birthday">Date of birth:</label>
+	        <input type="date" name="birthday">
+	        <br>
+	        <label for="color">Favorite Color:</label>
+	        <input type="color" name="color">
+	        <br>
+	        <label for="countries">Which country:</label>
+	        <select name="countries">
+	        	<option value="no selection"> </option>
+	        	<option value="fr">France</option>
+	        	<option value="be">Belgium</option>
+	        	<option value="ge">Germany</option>
+	        	<option value="ro">Romania</option>
+	        	<option value="it">Italy</option>
+	        </select>
+	    </fieldset>
+	    <fieldset>
+	    	<legend>Your Indicators</legend>
+	    	<label for="height">Height:</label>
+	    	Short <input type="range" min="0" max="100" step="5" value="50" name="height"> Tall
+	    	<br>
+	    	<label for="salary">Salary:</label>
+	    	Poor <input type="range" min="0" max="100" step="5" value="50" name="salary"> Rich
+	    </fieldset>
+	    <fieldset>
+	    	<legend>Your Contact Information</legend>
+	    	<label for="mail">Email:</label>
+	    	<input type="email" name="mail" required>
+	    	<br>
+	    	<label for="mobile">Mobile:</label>
+	    	<input type="tel" name="mobile">
+	    	<br>
+	    	<label for="address">Address:</label>
+	    	<textarea rows="2" cols="30" name="address"> </textarea>
+	    	<br>
+	    	<label for="contact">Method to contact you:</label>
+	    	<input type="checkbox" name="contact" value="email">Email
+	    	<input type="checkbox" name="contact" value="whatsapp">Whatsapp
+	    	<input type="checkbox" name="contact" value="chat">In-app chat
+	    </fieldset>
+	    <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+"# project-1-assessment" 
